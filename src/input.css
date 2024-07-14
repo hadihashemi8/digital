@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: YekanBakh;
+    font-style: normal;
+    src: url('/public/fonts/YekanBakh-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: YekanBakh-bold;
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/public/fonts/YekanBakh-ExtraBold.woff2') format('woff2');
+}
+
+body {
+    font-family: YekanBakh;
+}
+
+.header-text{
+    font-family: YekanBakh-bold
+}
+

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div
+        class="w-full min-h-[100vh] mx-auto flex flex-col items-center justify-between max-w-screen-2xl bg-[#0B0B0F] relative overflow-hidden">
+
+
+        <img class="absolute top-0 left-0 w-full hidden md:block" src="/public/bg.png" alt="bg">
+
+        <!-- header circle and shadows -->
+        <div
+            class="w-[259px] h-[259px]  rounded-full bg-gradient-to-r from-[#DECAFF] to-[#691EE2] absolute top-96 md:top-72 -right-20  ">
+        </div>
+
+        <div
+            class='bg-gradient-to-l from-[#00C2FF] to-[#FF29C3] absolute top-72 -right-10 h-64 w-72 rounded-full blur-[5rem]  '>
+        </div>
+
+        <div
+            class='bg-gradient-to-r from-[#184BFF] to-[#174AFF] absolute top-96 -right-14 h-52 w-52 rounded-full blur-[5rem]  '>
+        </div>
+
+
+        <!-- top-left effects -->
+        <div
+            class='z-40 bg-gradient-to-r from-[#173B80] to-[#11573E] absolute top-0 left-14 h-52 w-52 rounded-full blur-[5rem]  '>
+        </div>
+        <div
+            class='z-40 bg-gradient-to-r from-[#18FF9E] to-[#17FFE3] absolute top-24 left-14 h-52 w-52 rounded-full blur-[5rem]  '>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- navbar  section-->
+        <div
+            class="navbar w-full bg-[rgba(25,12,30,0.43)] z-40  h-[108px] flex items-center justify-start xl:justify-between px-8">
+
+            <div class="flex xl:hidden">
+
+                <div class="drawer drawer-start ">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+
+                        <label for="my-drawer-4" class="drawer-button btn ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </label>
+
+                    </div>
+                    <div class="drawer-side z-[999]">
+                        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul
+                            class="menu bg-[rgba(25,12,30)]  min-h-full w-80 p-4 flex- flex-col items-center gap-4 justify-start">
+                            <!-- Sidebar content here -->
+                            <div class=" flex flex-col gap-4 items-center   ">
+                                <a href="/">
+                                    <img class="w-10 h-10 " src="../public/Vector.svg" alt="logo">
+                                </a>
+                                <span class="text-xl text-white font-semibold">دنیای ارز</span>
+                            </div>
+
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>صفحه اصلی</a>
+                            </li>
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>قیمت
+                                    لحظه ای</a>
+                            </li>
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>معامله
+                                    سریع</a>
+                            </li>
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>دعوت
+                                    دوستان</a>
+                            </li>
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>درباره
+                                    ما</a>
+                            </li>
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm">
+                                <a>ارتباط
+                                    با ما</a>
+                            </li>
+
+                            <li
+                                class="w-full text-start text-white border-2 rounded-lg border-transparent hover:bg-[#550198] hover:border-white duration-300 text-sm flex flex-row items-center justify-between">
+                                <a>ورود | ثبت نام</a>
+                                <img src="/public/earth.svg" alt="earth">
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex  items-center gap-2 mx-auto xl:mx-0">
+                <a href="/">
+                    <img class="w-[70px]  " src="../public/Vector.svg" alt="logo">
+                </a>
+                <h1 class="text-2xl text-white font-semibold text-nowrap">دنیای ارز</h1>
+            </div>
+
+            <!-- navlinks -->
+            <div class="hidden xl:flex items-center justify-between gap-4  ">
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">صفحه
+                    اصلی</button>
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">قیمت
+                    لحظه ای</button>
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">معامله
+                    سریع</button>
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">دعوت
+                    دوستان</button>
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">درباره
+                    ما</button>
+
+                <button
+                    class="rounded-full bg-[#100A12] border-[1px] border-[#2E2E2E] px-6 py-2 text-white hover:bg-[#550198] hover:border-white duration-300 text-sm">ارتباط
+                    با ما</button>
+
+            </div>
+
+
+            <div class=" items-center gap-4 hidden xl:flex">
+
+                <img src="/public/earth.svg" alt="earth">
+
+                <button class="rounded-full bg-white border-[1px] border-[#550198] px-6 py-2 text-sm">
+                    ورود | ثبت نام
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- header section -->
+        <div class=" relative pt-32 flex items-center justify-center px-4 md:px-10 lg:px-28 py-20 w-full  ">
+
+
+            <!-- shadow img 1 -->
+
+            <!-- bitcoin shape -->
+            <img class="absolute top-4 left-24 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-Bitcoin.svg" alt="shape-Bitcoin">
+
+            <!-- star shape -->
+            <img class="absolute top-28 left-60 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-1.svg" alt="shape-start">
+
+            <!-- sphere shape -->
+            <img class="absolute top-96 left-32 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-sphere.svg" alt="shape-sphere">
+
+            <!-- LiteCoin shape -->
+            <img class="absolute top-[600px] left-60 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-LiteCoin-1.svg" alt="shape-LiteCoin">
+
+
+            <!-- star shape -->
+            <img class="absolute top-4 right-20 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/star-img.svg" alt="star">
+
+            <!-- star shape -->
+            <img class="absolute top-4 right-52 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-2.svg" alt="star">
+
+
+            <!-- Monero shape -->
+            <img class="absolute top-20 right-32 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-Monero.svg" alt="shape-Monero">
+
+
+            <!-- Etherium shape -->
+            <img class="absolute top-[450px] right-52 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-Etherium-1.svg" alt="shape-Etherium">
+
+            <!-- star shape -->
+            <img class="absolute top-[700px] right-24 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-1.svg" alt="shape-star">
+
+            <div class="flex flex-col items-center gap-8">
+
+                <h1 class="text-white font-extrabold text-6xl header-text tracking-tight text-center">دنیا را یکجا
+                    معامله کنید</h1>
+
+                <div class="flex flex-col items-center">
+
+                    <div
+                        class="p-3 rounded-t-xl bg-[#17181F] flex gap-3 items-center border-b-0 border-[1px] border-[#272728]">
+
+                        <button
+                            class="bg-[#1BA27A] py-2 rounded-full text-white px-4 text-sm w-[90px] block">خرید</button>
+
+                        <button
+                            class="bg-[#14141F] py-2 rounded-full text-white px-4 text-sm w-[90px] block">فروش</button>
+
+                    </div>
+
+                    <div
+                        class="w-full md:w-[428px]  bg-[#17181F] rounded-xl border-[1px] border-[#272728] flex flex-col items-center px-4 py-5 gap-2">
+
+                        <div class="flex flex-col items-start gap-2 w-full">
+
+                            <p class="text-sm text-white mr-2">پرداخت میکنم</p>
+
+                            <div class="w-full  bg-[#22232D] rounded-xl overflow-hidden">
+
+                                <div class="w-full h-14 rounded-xl bg-[#14141F] p-2 flex items-center">
+
+                                    <input
+                                        class="flex-1 w-2/3 md:w-full bg-transparent text-white py-2 border-none outline-none"
+                                        type="text">
+
+                                    <div class="flex  items-center justify-between gap-4 p-2 rounded-xl bg-[#0B0B0F]">
+
+                                        <img src="/public/toman.svg" alt="tmn">
+
+                                        <p class="text-white text-lg ">TMN</p>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="w-full px-8 flex items-center justify-between my-1">
+
+                                    <span class="text-[10px] text-white">موجودی در دسترس</span>
+
+                                    <span class="text-[10px] text-white">50,601</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="cursor-pointer">
+                            <img class="w-6 h-6" src="/public/change.svg" alt="change">
+                        </span>
+
+
+                        <div class="flex flex-col items-start gap-2 w-full">
+
+                            <p class="text-sm text-white mr-2">دریافت میکنم</p>
+
+                            <div class="w-full  bg-[#22232D] rounded-xl overflow-hidden">
+
+                                <div class="w-full h-14 rounded-xl bg-[#14141F] p-2 flex items-center">
+
+                                    <input
+                                        class="flex-1 w-2/3 md:w-full bg-transparent text-white py-2 border-none outline-none"
+                                        type="text">
+
+                                    <div class="flex items-center justify-between gap-4 p-2 rounded-xl bg-[#0B0B0F]">
+
+                                        <img src="/public/usdt.svg" alt="usdt">
+
+                                        <span class="text-white text-lg">USDT</span>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="w-full px-8 flex items-center justify-between my-1">
+
+                                    <span class="text-[10px] text-white">دریافت پس از کسر کارمزد</span>
+
+                                    <span class="text-[10px] text-white">50,601</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="w-full px-8 flex items-center justify-between my-2">
+
+                            <span class="text-[10px] text-white">کارمزد %0.35</span>
+
+                            <span class="text-[10px] text-white">USDT 00.00</span>
+
+                        </div>
+
+
+                        <button class="bg-[#1BA27A] py-2 px-4 rounded-full w-[122px] text-white text-lg">
+                            خرید
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- calculate section -->
+        <div class="relative flex items-center justify-center px-4 md:px-10 lg:px-28 py-20 w-full z-50">
+
+            <!-- shape images -->
+
+            <!-- star shape -->
+            <img class="absolute top-44  left-12 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/star-img.svg" alt="shape-star">
+
+            <!-- star shape -->
+            <img class="absolute top-72  left-14 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-2.svg" alt="shape-star">
+
+
+            <div class="flex items-center gap-20 flex-wrap justify-center ">
+
+                <div
+                    class="w-[187px] h-[232px] bg-[#1A1B23] rounded-[25px] flex flex-col items-center justify-center p-4 gap-4">
+
+                    <span
+                        class="w-20 h-20 rounded-full bg-[url(../public/circle.svg)] flex items-center justify-center">
+                        <img class="w-9 h-9" src="/public/money.svg" alt="">
+                    </span>
+
+                    <h2 class="text-sm text-white">حجم معاملات</h2>
+
+                    <p class="text-2xl text-[#10F5B2]">9000+ میلیارد</p>
+
+                </div>
+
+                <div
+                    class="w-[187px] h-[232px] bg-[#1A1B23] rounded-[25px] flex flex-col items-center justify-center p-4 gap-4">
+
+                    <span
+                        class="w-20 h-20 rounded-full bg-[url(../public/circle.svg)] flex items-center justify-center">
+                        <img class="w-9 h-9" src="/public/user.svg" alt="">
+                    </span>
+
+                    <h2 class="text-sm text-white">کاربر</h2>
+
+                    <p class="text-2xl text-[#10F5B2]">+30000</p>
+
+                </div>
+
+                <div
+                    class="w-[187px] h-[232px] bg-[#1A1B23] rounded-[25px] flex flex-col items-center justify-center p-4 gap-4">
+
+                    <span
+                        class="w-20 h-20 rounded-full bg-[url(../public/circle.svg)] flex items-center justify-center">
+                        <img class="w-9 h-9" src="/public/money-change.svg" alt="">
+                    </span>
+
+                    <h2 class="text-sm text-white">تراکنش روزانه</h2>
+
+                    <p class="text-2xl text-[#10F5B2]">9000+ میلیارد</p>
+
+                </div>
+
+                <div
+                    class="w-[187px] h-[232px] bg-[#1A1B23] rounded-[25px] flex flex-col items-center justify-center p-4 gap-4">
+
+                    <span
+                        class="w-20 h-20 rounded-full bg-[url(../public/circle.svg)] flex items-center justify-center">
+                        <img class="w-9 h-9" src="/public/bitcoin.svg" alt="">
+                    </span>
+
+                    <h2 class="text-sm text-white">تعداد رمز ارز قابل معامله</h2>
+
+                    <p class="text-2xl text-[#10F5B2]">+500</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- table section -->
+        <div class="flex items-center justify-center px-4 md:px-10 lg:px-28 py-20 w-full z-40">
+            <div class="overflow-x-scroll w-full max-w-[1180px] ">
+                <table class="table bg-[#17181f] rounded-2xl  ">
+                    <tbody>
+
+
+                        <tr class="border-b-[#2B2C3B] ">
+                            <th class="text-white w-52 text-nowrap">Bitcoin</th>
+                            <td class="text-[#B982FF] text-end text-nowrap px-16">BTC</td>
+                            <td class="text-white text-end text-nowrap px-16">56,290.30 تومان</td>
+                            <td class="text-[#0DBB7C] text-end text-nowrap px-16">+1.68%</td>
+                            <td class="flex justify-center  px-4 w-52 ">
+                                <img class="w-full" src="/public/chart.svg" alt="chart">
+                            </td>
+                            <td class="text-white px-6 pl-10  ">
+                                <a href="/" class="flex flex-row-reverse gap-2 text-nowrap">خرید آنی
+                                    <img src="/public/arrow.svg" alt="arrow">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b-[#2B2C3B] ">
+                            <th class="text-white w-52 text-nowrap">Ethereum</th>
+                            <td class="text-[#B982FF] text-end text-nowrap px-16">ETH</td>
+                            <td class="text-white text-end text-nowrap px-16">56,290.30 تومان</td>
+                            <td class="text-[#0DBB7C] text-end text-nowrap px-16">+1.68%</td>
+                            <td class="flex justify-center  px-4 w-52 ">
+                                <img class="w-full" src="/public/chart.svg" alt="chart">
+                            </td>
+                            <td class="text-white px-6 pl-10  ">
+                                <a href="/" class="flex flex-row-reverse gap-2 text-nowrap">خرید آنی
+                                    <img src="/public/arrow.svg" alt="arrow">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b-[#2B2C3B] ">
+                            <th class="text-white w-52 text-nowrap">Cardano</th>
+                            <td class="text-[#B982FF] text-end text-nowrap px-16">ADA</td>
+                            <td class="text-white text-end text-nowrap px-16">56,290.30 تومان</td>
+                            <td class="text-[#0DBB7C] text-end text-nowrap px-16">+1.68%</td>
+                            <td class="flex justify-center  px-4 w-52 ">
+                                <img class="w-full" src="/public/chart.svg" alt="chart">
+                            </td>
+                            <td class="text-white px-6 pl-10  ">
+                                <a href="/" class="flex flex-row-reverse gap-2 text-nowrap">خرید آنی
+                                    <img src="/public/arrow.svg" alt="arrow">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b-[#2B2C3B] ">
+                            <th class="text-white w-52 text-nowrap">Wax</th>
+                            <td class="text-[#B982FF] text-end text-nowrap px-16">WAXP</td>
+                            <td class="text-white text-end text-nowrap px-16">56,290.30 تومان</td>
+                            <td class="text-[#0DBB7C] text-end text-nowrap px-16">+1.68%</td>
+                            <td class="flex justify-center  px-4 w-52 ">
+                                <img class="w-full" src="/public/chart.svg" alt="chart">
+                            </td>
+                            <td class="text-white px-6 pl-10  ">
+                                <a href="/" class="flex flex-row-reverse gap-2 text-nowrap">خرید آنی
+                                    <img src="/public/arrow.svg" alt="arrow">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b-[#2B2C3B] ">
+                            <th class="text-white w-52 text-nowrap">Polkadot</th>
+                            <td class="text-[#B982FF] text-end text-nowrap px-16">DOT</td>
+                            <td class="text-white text-end text-nowrap px-16">56,290.30 تومان</td>
+                            <td class="text-[#0DBB7C] text-end text-nowrap px-16">+1.68%</td>
+                            <td class="flex justify-center  px-4 w-52 ">
+                                <img class="w-full" src="/public/chart.svg" alt="chart">
+                            </td>
+                            <td class="text-white px-6 pl-10  ">
+                                <a href="/" class="flex flex-row-reverse gap-2 text-nowrap">خرید آنی
+                                    <img src="/public/arrow.svg" alt="arrow">
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- infos section -->
+        <div class="relative flex items-center justify-center px-4 md:px-10 lg:px-28 py-20 w-full">
+
+
+            <!-- Looper shape -->
+            <img class="absolute -top-60 right-0 z-30  " src="/public/Looper.svg" alt="Looper">
+
+
+            <!--  effects -->
+            <div
+                class='z-40 bg-gradient-to-r from-[#82392C] to-[#D0A22C] absolute top-28 left-14 h-52 w-80 rounded-full blur-[5rem]  '>
+            </div>
+            <div
+                class='z-40 bg-gradient-to-r from-[#FF4F18] to-[#FF4117] absolute top-80 left-14 h-52 w-80 rounded-full blur-[5rem]  '>
+            </div>
+
+
+            <!-- star shape -->
+            <img class="absolute top-60  left-32 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-2.svg" alt="shape-star">
+
+
+            <!-- sphere shape -->
+            <img class="absolute top-96 left-44 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-sphere-2.svg" alt="shape-sphere">
+
+
+            <!-- star shape -->
+            <img class="absolute top-72 right-32 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-1.svg" alt="shape-start">
+
+
+            <div class="flex flex-col items-center gap-14 w-full z-40">
+
+                <p class="bg-[#1BA27A] rounded-full px-8 py-2 text-white">دنیای ارز</p>
+
+                <div
+                    class="flex flex-col items-center sm:flex-row-reverse justify-center flex-wrap gap-x-[70px] gap-y-24 lg:px-14 w-full  ">
+
+
+                    <div
+                        class="w-[219px] h-[256px] bg-[#272728] rounded-[25px] flex flex-col justify-center items-center gap-6">
+
+                        <p class="text-white text-[20px]">تضمین قیمت</p>
+
+                        <img class="w-40 h-40" src="/public/mony.svg" alt="mony">
+
+
+                    </div>
+
+
+                    <div
+                        class="w-[219px] h-[256px] bg-[#272728] rounded-[25px] flex flex-col justify-center items-center gap-6">
+
+                        <p class="text-white text-[20px]">امنیت</p>
+
+                        <img class="w-40 h-40" src="/public/shield.svg" alt="shield">
+
+                    </div>
+
+
+                    <div
+                        class="w-[219px] h-[256px] bg-[#272728] rounded-[25px] flex flex-col justify-center items-center gap-6">
+
+                        <p class="text-white text-[20px]">شفافیت</p>
+
+                        <img class="w-40 h-40" src="/public/search.svg" alt="search">
+
+                    </div>
+
+
+                    <div
+                        class="w-[219px] h-[256px] bg-[#272728] rounded-[25px] flex flex-col justify-center items-center gap-6">
+
+                        <p class="text-white text-[20px]">کیف پول</p>
+
+                        <img class="w-40 h-40" src="/public/wallet.svg" alt="wallet">
+
+                    </div>
+
+
+                    <div
+                        class="w-[219px] h-[256px] bg-[#272728] rounded-[25px] flex flex-col justify-center items-center gap-6">
+
+                        <p class="text-white text-[20px]">احراز هویت</p>
+
+                        <img class="w-40 h-40" src="/public/phone.svg" alt="phone">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- news section -->
+
+        <div class="relative z-40 flex items-center justify-center px-4 md:px-10 lg:px-20 xl:px-28 py-20 w-full">
+
+
+            <!-- star shape -->
+            <img class="absolute top-0 right-20 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/star-img.svg" alt="star">
+
+
+            <!-- star shape -->
+            <img class="absolute top-full  right-12 z-40 hover:scale-105 duration-300 hidden xl:block"
+                src="/public/shape-star-2.svg" alt="shape-star">
+
+
+            <!-- effects -->
+            <div
+                class='z-30 bg-gradient-to-r from-[#00C2FF] to-[#FF29C3] absolute top-0 right-14 h-52 w-52 rounded-full blur-[5rem]  '>
+            </div>
+            <div
+                class='z-30 bg-gradient-to-r from-[#184BFF] to-[#174AFF] absolute top-24 right-14 h-52 w-52 rounded-full blur-[5rem]  '>
+            </div>
+
+
+
+            <div
+                class="w-full p-8 bg-[#1A1D28] lg:h-[235px] rounded-[47px] flex flex-col lg:flex-row items-center gap-6 relative lg:pr-96 z-40">
+
+                <!-- star -->
+                <img class="absolute top-4 xl:top-14 left-4 xl:left-14" src="/public/star-img.svg" alt="star">
+
+                <img class="lg:absolute right-12 -top-8 " src="/public/ads.svg" alt="ads">
+
+                <div class="flex flex-col items-start gap-4 lg:gap-6">
+
+                    <h2 class="text-xl text-white text-center lg:text-start lg:text-3xl xl:text-4xl font-semibold">
+                        کسب
+                        درآمد از طریق دعوت دوستان</h2>
+                    <p class="text-white text-sm lg:text-lg">با دعوت از دوستان خود در دنیای ارز از کمیسیون خرید
+                        معاملات
+                        آنها را دریافت کنید.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- blogs section -->
+        <div class="relative w-full flex items-center justify-center py-20">
+
+            <!-- Looper shape -->
+            <img class="absolute bottom-0 left-0 z-30  " src="/public/Looper-2.svg" alt="Looper">
+
+            <div class="flex items-center gap-10 p-4 relative w-full justify-center z-40">
+
+                <!-- navigate btns -->
+                <span
+                    class="w-10 md:w-14 h-10 md:h-14 bg-[#17181F] rounded-full border-[1px] border-[#2D2D2F] absolute right-1 lg:right-4 top-1/2 -translate-y-[70%] flex items-center justify-center">
+                    <img src="/public/slider-arrow.svg" alt="arrow">
+                </span>
+
+                <span
+                    class="w-10 md:w-14 h-10 md:h-14 bg-[#17181F] rounded-full border-[1px] border-[#2D2D2F] absolute left-1 lg:left-4 top-1/2 -translate-y-[70%] flex items-center justify-center">
+                    <img class="rotate-180" src="/public/slider-arrow.svg" alt="arrow">
+                </span>
+
+
+                <!-- blog card -->
+                <div
+                    class="bg-[#272728] rounded-[48px]  flex-col items-center gap-2 w-full max-w-[330px] pb-6 hidden sm:flex">
+
+                    <img src="/public/blog.png" alt="blog">
+
+                    <div class="flex flex-col items-start gap-4 px-8 py-4 ">
+
+                        <h2 class="text-white text-sm">آینده بیت کویین چه خواهد شد ؟</h2>
+                        <p class="text-white  text-justify text-xs pb-8 border-b-[1px] border-white ">در این قسمت
+                            توضیحات مرتبط با پست وبلاگ قرار می گیرد
+                            در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد در این قسمت توضیحات مرتبط با پست
+                            وبلاگ
+                            قرار می گیرد در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد</p>
+
+
+                    </div>
+
+                    <a class="text-[#10F5B2] text-center" href="/">مطالعه بیشتر</a>
+
+
+                </div>
+
+                <!-- blog card -->
+                <div
+                    class="bg-[#272728] rounded-[48px]  flex-col items-center gap-2 w-full max-w-[330px] pb-6 hidden lg:flex">
+
+                    <img src="/public/blog.png" alt="blog">
+
+                    <div class="flex flex-col items-start gap-4 px-8 py-4 ">
+
+                        <h2 class="text-white text-sm">آینده بیت کویین چه خواهد شد ؟</h2>
+                        <p class="text-white  text-justify text-xs pb-8 border-b-[1px] border-white ">در این قسمت
+                            توضیحات مرتبط با پست وبلاگ قرار می گیرد
+                            در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد در این قسمت توضیحات مرتبط با پست
+                            وبلاگ
+                            قرار می گیرد در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد</p>
+
+
+                    </div>
+
+                    <a class="text-[#10F5B2] text-center" href="/">مطالعه بیشتر</a>
+
+
+                </div>
+
+                <!-- blog card -->
+                <div class="bg-[#272728] rounded-[48px] flex flex-col items-center gap-2 w-full max-w-[330px] pb-6">
+
+                    <img src="/public/blog.png" alt="blog">
+
+                    <div class="flex flex-col items-start gap-4 px-8 py-4 ">
+
+                        <h2 class="text-white text-sm">آینده بیت کویین چه خواهد شد ؟</h2>
+                        <p class="text-white  text-justify text-xs pb-8 border-b-[1px] border-white ">در این قسمت
+                            توضیحات مرتبط با پست وبلاگ قرار می گیرد
+                            در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد در این قسمت توضیحات مرتبط با پست
+                            وبلاگ
+                            قرار می گیرد در این قسمت توضیحات مرتبط با پست وبلاگ قرار می گیرد</p>
+
+
+                    </div>
+
+                    <a class="text-[#10F5B2] text-center" href="/">مطالعه بیشتر</a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- footer section -->
+        <div
+            class="mt-auto border-t-[1px] border-t-[#1A1B23] w-full p-8 grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-20 py-20 relative">
+
+
+            <!--  effects -->
+            <div
+                class='z-40 bg-gradient-to-r from-[#2C4982] to-[#2CD095] absolute -bottom-24 left-8 h-52 w-80 rounded-full blur-[5rem]  '>
+            </div>
+            <div
+                class='z-40 bg-gradient-to-r from-[#18FF9E] to-[#17FFE3] absolute -bottom-24 left-52 h-52 w-80 rounded-full blur-[5rem]  '>
+            </div>
+
+
+            <div class="col-span-1 lg:col-span-1 flex flex-col gap-4 items-center flex-1  z-40">
+                <a href="/">
+                    <img class="w-24 lg:w-32 h-24 lg:h-32" src="../public/Vector.svg" alt="logo">
+                </a>
+                <span class="text-2xl text-white font-semibold">دنیای ارز</span>
+            </div>
+
+            <div class="col-span-1 lg:col-span-4  flex-col items-start gap-8 flex w-full z-40">
+
+                <p class="text-white text-justify border-b-[1px] border-b-[#1A1B23] pb-4">
+                    ما در دنیای ارز، امکاناتی در حد صرافی های بین المللی را در اختیار شما قرار می دهیم.با توجه به
+                    توسعه
+                    روز
+                    افزون دارایی های دیجیتال در کنار دارایی های سنتی، دنیای ارز بر آن است تا با ارائه راهکارهای جدید
+                    و
+                    امن،
+                    توسعه بومی بسیاری از این تکنولوژی ها با تکیه بر دانش متخصصان داخلی گامی بزرگ در ارائه خدمات بر
+                    بستر
+                    بلاکچین در داخل کشور بردارد.
+                </p>
+
+
+                <div class="flex flex-col items-center justify-start gap-12 md:flex-row  w-full lg:px-8">
+
+                    <div class="flex items-end justify-start gap-8 flex-wrap md:flex-nowrap ">
+
+                        <ul class="flex flex-col items-start gap-4">
+
+                            <li class="text-white mb-2 font-semibold">دنیای ارز</li>
+                            <li class="text-white font-extralight">درباره ما</li>
+                            <li class="text-white font-extralight">ارتباط با ما</li>
+                            <li class="text-white font-extralight">بلاگ</li>
+
+                        </ul>
+
+                        <ul class="flex flex-col items-start gap-4">
+
+                            <li class="text-white mb-2 font-semibold">راهنما</li>
+                            <li class="text-white font-extralight">احراز هویت</li>
+                            <li class="text-white font-extralight">قوانین و مقررات</li>
+                            <li class="text-white font-extralight">دعوت دوستان</li>
+
+                        </ul>
+
+                        <ul class="flex flex-col items-start gap-4 mt-3">
+
+                            <li class="text-white font-extralight">ثبت تیکت و پشتیبانی</li>
+                            <li class="text-white font-extralight">ثبت تیکت و پشتیبانی</li>
+                            <li class="text-white font-extralight">فرصت های شغلی</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col items-center  gap-4 ">
+
+                        <div class="flex flex-col items-start gap-3 ">
+                            <label for="join-input" class="text-white">عضویت در خبرنامه دنیای ارز</label>
+                            <div
+                                class=" px-4  bg-[#17181F]  join-input border-[#18C8FF] border-2 rounded-xl p-2 overflow-hidden flex items-center gap-1">
+                                <img src="/public/arrow.svg" alt="arrow">
+                                <input placeholder="ایمیل خود را وارد کنید"
+                                    class="w-full bg-transparent text-white py-1 px-2 border-none outline-none placeholder:text-white placeholder:text-sm xl:w-96"
+                                    id="join-input" type="text">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-4 gap-4">
+
+                            <a href="/" class="col-span-1 p-2 rounded-full border-[1px] border-[#17181F] bg-[#17181F]">
+                                <img src="/public/instagram.svg" alt="instagram">
+                            </a>
+
+                            <a href="/" class="col-span-1 p-2 rounded-full border-[1px] border-[#17181F] bg-[#17181F]">
+                                <img src="/public/instagram.svg" alt="instagram">
+                            </a>
+
+                            <a href="/" class="col-span-1 p-2 rounded-full border-[1px] border-[#17181F] bg-[#17181F]">
+                                <img src="/public/instagram.svg" alt="instagram">
+                            </a>
+
+                            <a href="/" class="col-span-1 p-2 rounded-full border-[1px] border-[#17181F] bg-[#17181F]">
+                                <img src="/public/instagram.svg" alt="instagram">
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
