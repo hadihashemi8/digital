@@ -29,9 +29,11 @@ body {
     animation:animation alternate-reverse 2s infinite;
 }
 
-.star {
-    animation:animation alternate-reverse 1s infinite ease-in-out;
+.move {
+    animation:animation_2 alternate-reverse 1.4s infinite ease-in-out;
 }
+
+
 
 
 /* animations */
@@ -47,3 +49,12 @@ body {
     }
 }
 
+@keyframes animation_2 {
+    from {
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(10px);
+    }
+}
